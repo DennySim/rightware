@@ -1,22 +1,22 @@
 
-#About
+# About
 
 vagrant and ansible container deploy 
 
-#Prerequisites
+# Prerequisites
 
-###Required packages on host
+### Required packages on host
 - python
 - ansible
 - docker
 - vagrant
 
-#Installation
+# Installation
 git clone https://github.com/DennySim/rightware.git
 
-#Usage
+# Usage
 
-###Vagrant deploy
+### Vagrant deploy
 Note: set your own environtment via deploy/vagrant/config.yaml
 
 ```
@@ -29,7 +29,7 @@ Check ssh access
 ![vagrant_ssh](images/1_2.PNG)
 
 
-###Ansible deploy
+### Ansible deploy
 Note: set your own environtment via deploy/ansible/config.yml
 ```
 cd deploy/ansible
