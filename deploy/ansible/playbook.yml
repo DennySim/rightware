@@ -1,0 +1,19 @@
+# playbook.yml
+---
+- hosts: localhost
+  connection: local
+  tasks:
+    - name: build docker image
+      community.docker.docker_image:
+        build:
+          path: "{{ build_dir }}"
+        name: "{{ image_name }}"
+        source: build
+    - name: deploy docker container
+      docker_container:
+        image: "{{ image_name }}"
+        name: "{{ container_name }}"
+        state: started
+        auto_remove: true
+        ports:
+          - "{{ ext_app_port }}:80"

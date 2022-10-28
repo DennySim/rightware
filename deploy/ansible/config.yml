@@ -1,0 +1,4 @@
+build_dir: './docker_ansible'
+image_name: 'app/expo'
+container_name: 'expo'
+ext_app_port: '8080'

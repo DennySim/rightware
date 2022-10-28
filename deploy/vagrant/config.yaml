@@ -1,0 +1,5 @@
+---
+env:
+  build_dir: "./docker_vagrant"
+  ports:
+    ext_ssh_port: "2222"
